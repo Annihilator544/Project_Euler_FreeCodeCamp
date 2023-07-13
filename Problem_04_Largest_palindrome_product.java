@@ -1,4 +1,4 @@
-public class Problem_4_Largest_palindrome_product {
+public class Problem_04_Largest_palindrome_product {
     static void largestPalindromeProduct(int i){
         int j=9;
         while(i>1){
