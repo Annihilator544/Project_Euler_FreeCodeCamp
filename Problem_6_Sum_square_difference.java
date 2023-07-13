@@ -1,4 +1,4 @@
-public class Problem_6_Sum_square_difference {
+public class Problem_06_Sum_square_difference {
     static void sumSquareDifference(int i){
         int sum1=0,sum2=0;
         for(int k=1;k<=i;k++){
