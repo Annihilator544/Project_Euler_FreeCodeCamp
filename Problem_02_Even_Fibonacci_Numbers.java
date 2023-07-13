@@ -1,5 +1,5 @@
 import java.util.*;
-public class Problem_2_Even_Fibonacci_Numbers {
+public class Problem_02_Even_Fibonacci_Numbers {
     static int fib(int i){
         if(i==0||i==1)
             return i;
