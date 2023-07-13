@@ -1,4 +1,4 @@
-class Problem_1_Multiples_of_3_and_5 {
+class Problem_01_Multiples_of_3_and_5 {
 static int multiplesof3and5(int i)
 {
     int sum = 0;
