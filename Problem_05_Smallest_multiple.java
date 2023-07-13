@@ -1,4 +1,4 @@
-public class Problem_5_Smallest_multiple {
+public class Problem_05_Smallest_multiple {
    static void smallestmult(int i){
     int var=1;
     int count=0;
