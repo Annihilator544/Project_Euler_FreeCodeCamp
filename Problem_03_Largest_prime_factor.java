@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Problem_3_Largest_prime_factor {
+public class Problem_03_Largest_prime_factor {
    static ArrayList<Integer> Prime=new ArrayList<Integer>();
     static void largestPrimeFactor(int i){
         int max=0;
