@@ -1,27 +1,17 @@
-function latticePaths(gridSize) {
-  let n = gridSize;
-  let result = [];
-
-  // Make n+1 size rows and columns
-  for (let i = n; i >= 0; i--) {
-    let row = [];
-    row[n] = 1;
-    result.push(row);
-  }
-
-  // Each point in row assign value of posible ways
-  //  to reach bottom right point
-  for (let i = n; i >= 0; i--) {
-    for (let j = n - 1; j >= 0; j--) {
-      if (i === n) {
-        result[i][j] = 1;
-      } else {
-        result[i][j] = result[i][j + 1] + result[i + 1][j]
-      }
+public class Problem_15_Lattice_paths{
+public static void main(String[] args) {
+    int n = 20;
+    long matrix[][] = new long[n][n];
+    for (int i = 0; i < n; i++) {
+        matrix[i][0] = i + 2;
+        matrix[0][i] = i + 2;
     }
-  }
-
-  // Starting position is top left corner,
-  //  so the answer is first element of first array
-  return result[0][0];
+    for (int i = 1; i < n; i++) {
+        for (int j = i; j < n; j++) {      // j>=i
+            matrix[i][j] = matrix[i - 1][j] + matrix[i][j - 1];
+            matrix[j][i] = matrix[i][j];   // avoids double computation (difference)
+        }
+    }
+    System.out.println(matrix[n - 1][n - 1]);
+}
 }
