@@ -1,4 +1,4 @@
-public class Problem_8_Largest_product_in_a_series {
+public class Problem_08_Largest_product_in_a_series {
     public static void main(String[] args){
         LargestProductinaSeries(4);
     }
