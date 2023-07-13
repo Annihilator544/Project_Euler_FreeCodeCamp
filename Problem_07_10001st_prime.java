@@ -1,4 +1,4 @@
-public class Problem_7_10001st_prime {
+public class Problem_07_10001st_prime {
     static int prime;
     static int count=0;
     static void nthPrime(int i){
