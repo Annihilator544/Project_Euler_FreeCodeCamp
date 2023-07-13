@@ -1,4 +1,4 @@
-public class Problem_9_Special_Pythagorean_triplet {
+public class Problem_09_Special_Pythagorean_triplet {
     public static void main(String[] args){
         specialPythagoreanTriplet(24);
         specialPythagoreanTriplet(120);
